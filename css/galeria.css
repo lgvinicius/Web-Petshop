@@ -1,0 +1,22 @@
+section{
+    width: 620px;
+    min-height: 300px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 3px black;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.miniaturas img{
+    width: 110px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    cursor: pointer;
+}
+.miniaturas img:hover, 
+.miniaturas img.selecionado{
+    border:1.5px dashed black;
+}

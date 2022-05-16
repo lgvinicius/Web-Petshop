@@ -1,0 +1,149 @@
+/* Cria definição de fonte customizada */
+@font-face{
+    font-family: Catshop;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Catshop'), url(../fonts/Wicked\ Mouse\ Demo.otf);
+}
+
+body{
+    background: #1b959e url(../img/petfundo.png);
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    overflow: auto;
+    
+}
+header {
+    /* border: 3px solid black; */
+    min-height: 130px;
+    background: rgba(36, 8, 71, 0.71);
+}
+
+.container{
+    width: 996px;
+    /* border: 1px solid yellow;  */
+    margin: 0 auto; /*Centraliza o elemento*/  
+    padding-top: 8px;         
+}
+
+.container h1{
+    font-family:Catshop;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-size: 48px;
+    margin: 20px 0 0 24px;
+    /* Aplica o NEON */
+    animation-name: neon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+       
+}
+
+.container img,
+.container h1{
+    float: left;
+}
+.container img{
+    margin-bottom: 8px;
+}
+
+/*======= MENU =======*/
+
+.menu{
+    clear: both; /*serve como um corte para os floats*/
+}
+.menu a{
+    color: white;
+    padding: 7px; 
+    text-decoration: none;
+    font-weight: bold;
+    width: 315px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    transition: background 1s;
+}
+.menu a:first-child{
+    border-bottom: 3px solid rgb(69, 198, 238); 
+    
+}
+.menu a:first-child:hover{
+    background: rgb(69, 198, 238);
+}
+.menu a:last-child{
+    border-bottom: 3px solid rgb(177, 230, 52); 
+}
+.menu a:last-child:hover{
+    background: rgb(177, 230, 52); 
+}
+.menu a:nth-child(2){
+    border-bottom: 3px solid rgb(230, 52, 120);  
+}
+.menu a:nth-child(2):hover{
+    background:rgb(230, 52, 120); 
+}
+
+/* Rodapé */
+footer{
+    background: rgba(36, 8, 71, 0.71);
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 6px;    
+    
+}
+
+/* Helpers - classes auxiliares no layout */
+.clear{
+    clear: both;
+}
+
+/* NEON */
+@keyframes neon{
+    0%{
+        text-shadow: 0 0 5px #7bacff,
+                     0 0 10px #7bacff,
+                     0 0 20px #7bacff, 
+                     0 0 40px #7bacff, 
+                     0 0 80px #7bacff, 
+                     0 0 90px #7bacff, 
+                     0 0 100px #7bacff,  
+                     0 0 150px #7bacff;   
+    }
+    50%{
+        text-shadow: 0 0 5px #7bffce,
+                     0 0 10px #7bffce,
+                     0 0 20px #7bffce, 
+                     0 0 40px #7bffce, 
+                     0 0 80px #7bffce, 
+                     0 0 90px #7bffce, 
+                     0 0 100px #7bffce,  
+                     0 0 150px #7bffce;   
+    }
+    75%{
+        text-shadow: 0 0 5px #ff7bac,
+                     0 0 10px #ff7bac,
+                     0 0 20px #ff7bac, 
+                     0 0 40px #ff7bac, 
+                     0 0 80px #ff7bac, 
+                     0 0 90px #ff7bac, 
+                     0 0 100px #ff7bac,  
+                     0 0 150px #ff7bac;   
+    }
+    100%{
+        text-shadow: 0 0 5px #7bacff,
+                     0 0 10px #7bacff,
+                     0 0 20px #7bacff, 
+                     0 0 40px #7bacff, 
+                     0 0 80px #7bacff, 
+                     0 0 90px #7bacff, 
+                     0 0 100px #7bacff,  
+                     0 0 150px #7bacff;   
+    }
+    
+}

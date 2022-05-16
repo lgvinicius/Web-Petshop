@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petshop</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo-pet-2.png" alt="Logo da Pet Shop" >
+
+            
+            
+            <h1>pet shop</h1>
+
+            <nav class="menu">
+                <a href="index.htm">HOME</a>
+                <a href="galeria.htm">GALERIA</a>
+                <a href="contato.htm">CONTATO</a>
+            </nav>
+
+        </div>
+    </header>
+    <!-- Inicio do conteúdo do site -->
+    <section>
+      <aside>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.5343939891854!2d-51.31787338488345!3d-30.10751838185932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197f8882d0b93f%3A0xee5ad3d6125b4908!2sRes.%20La%20Fontana%20Di%20Trevi%20-%20R.%20Bento%20Gon%C3%A7alves%2C%20214%20-%20Centro%2C%20Gua%C3%ADba%20-%20RS%2C%2092500-000!5e0!3m2!1spt-BR!2sbr!4v1579645796668!5m2!1spt-BR!2sbr" allowfullscreen=""></iframe>
+      </aside>
+
+      <aside>
+        <form method="POST" onsubmit="return validaForm()">
+            <input type="text" name="Nome" placeholder="Digite o seu nome:" id="nome">
+            <input type="text" name="email" placeholder="Dígite seu email:" id="email">
+            <textarea name="mensagem" placeholder="Dígite sua mensagem" id="mensagem"></textarea>
+            <button type="submit">ENVIAR</button>
+            <div id="erro"></div>
+            
+
+        </form>  
+
+
+      </aside> 
+      <!-- Essa div serve apenas para corrigir o problema com o float dos filhos -->
+      <div class="clear"></div>
+    </section>
+        <!-- Final do conteúdo do site -->
+    <footer>
+        Rua Bento Gonçalves, 214 - Guaíba - RS
+
+    </footer>
+    <script src="js/contato.js"></script>
+</body>
+</html>
